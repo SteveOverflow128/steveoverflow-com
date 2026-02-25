@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About steveoverflow — Software engineer and infrastructure enthusiast based in Jacksonville, FL.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="About — steveoverflow">
+  <meta property="og:description" content="Software engineer and infrastructure enthusiast based in Jacksonville, FL.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://steveoverflow.com/about.html">
+
+  <link rel="canonical" href="https://steveoverflow.com/about.html">
+
+  <title>About — steveoverflow</title>
+
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --border: #30363d;
+      --text-primary: #e6edf3;
+      --text-secondary: #8b949e;
+      --accent: #58a6ff;
+      --accent-hover: #79c0ff;
+      --radius: 8px;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-primary);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
+                   Helvetica, Arial, sans-serif, "Apple Color Emoji";
+      font-size: 16px;
+      line-height: 1.7;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      padding: 3rem 1rem;
+    }
+
+    .content {
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.375rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.875rem;
+      margin-bottom: 2rem;
+      transition: color 0.15s ease;
+    }
+
+    .back-link:hover,
+    .back-link:focus-visible {
+      color: var(--text-primary);
+      outline: none;
+    }
+
+    .back-link:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+      margin-bottom: 2rem;
+    }
+
+    .divider {
+      height: 1px;
+      background-color: var(--border);
+      margin-bottom: 2rem;
+    }
+
+    .bio-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .bio-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .bio-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 6px;
+      background-color: var(--surface);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--text-secondary);
+      font-size: 1rem;
+      line-height: 1;
+    }
+
+    .bio-text {
+      padding-top: 0.375rem;
+    }
+
+    .bio-label {
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      line-height: 1.4;
+    }
+
+    .bio-sub {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      margin-top: 0.125rem;
+    }
+
+    footer {
+      padding: 1.25rem 1rem;
+      text-align: center;
+    }
+
+    .footer-text {
+      font-size: 0.8125rem;
+      color: var(--text-secondary);
+    }
+
+    .footer-text a {
+      color: var(--text-secondary);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .footer-text a:hover,
+    .footer-text a:focus-visible {
+      color: var(--text-primary);
+      outline: none;
+    }
+
+    .footer-text a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+
+    @media (max-width: 480px) {
+      main {
+        padding: 2rem 1rem;
+      }
+
+      h1 {
+        font-size: 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="content">
+      <a class="back-link" href="index.html">
+        <span aria-hidden="true">&#8592;</span>
+        steveoverflow.com
+      </a>
+
+      <h1>About</h1>
+      <div class="divider" role="separator"></div>
+
+      <ul class="bio-list">
+        <li class="bio-item">
+          <div class="bio-icon" aria-hidden="true">&#10021;</div>
+          <div class="bio-text">
+            <div class="bio-label">Software Engineer</div>
+            <div class="bio-sub">Building software and the systems that run it.</div>
+          </div>
+        </li>
+        <li class="bio-item">
+          <div class="bio-icon" aria-hidden="true">&#9729;</div>
+          <div class="bio-text">
+            <div class="bio-label">Infrastructure Enthusiast</div>
+            <div class="bio-sub">Containers, homelab, and keeping things running.</div>
+          </div>
+        </li>
+        <li class="bio-item">
+          <div class="bio-icon" aria-hidden="true">&#9741;</div>
+          <div class="bio-text">
+            <div class="bio-label">Jacksonville, FL</div>
+            <div class="bio-sub">Based in Northeast Florida.</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <p class="footer-text">
+      <a href="index.html">Home</a>
+      &nbsp;&middot;&nbsp;
+      <a href="projects.html">Projects</a>
+      &nbsp;&middot;&nbsp;
+      <a href="privacy.html">Privacy Policy</a>
+    </p>
+  </footer>
+</body>
+</html>
